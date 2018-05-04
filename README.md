@@ -28,13 +28,11 @@ Este proyecto es un proyecto base que contempla los siguientes elementos aplicad
 
 3. Existe la sección de perfil del usuario para hacer sign up (registrarse), sign in (iniciar sesión) y sign out (cerrar sesión).
 
-
 ## Funcionalidades
 
 1. Página inicial de bienvenida donde solo los usuarios visitantes (no registrados ni logeados) pueden visitar
 
 2. Se creará un sistema básico para crear usuarios a través de [Scaffold](http://guides.rubyonrails.org/v3.2.9/getting_started.html#getting-up-and-running-quickly-with-scaffolding) de Rails. Esto quiere decir que se puede hacer el [CRUD](https://es.wikipedia.org/wiki/CRUD) de usuarios en la aplicación. Sólo los usuarios logeados pueden acceder a esta funcionalidad.
-
 
 # La gema Devise
 
@@ -46,15 +44,14 @@ Proyecto rails con todos los [elementos aplicados](https://github.com/enaguero/d
 
 ```
 $ rails generate devise:install
-$ rails generate devise MODEL
 $ rails g scaffold User name:string last_name:string phone:string address:string
+$ rails generate devise User
 ```
 
 Para más detalle, ver la [documentación oficial de Devise](https://github.com/plataformatec/devise#getting-started).
 
 
-
 # Fuentes
 
-1. [Ícono de usuario para foto de perfil](http://jsfiddle.net/bJcrk/2/)
-2. [Iniciar con Devise - Documentación Oficial](https://github.com/plataformatec/devise#getting-started)
+1. [Ícono de usuario para foto de perfil](http://jsfiddle.net/bJcrk/2/).
+2. [Iniciar con Devise - Documentación Oficial](https://github.com/plataformatec/devise#getting-started).
