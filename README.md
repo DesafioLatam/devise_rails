@@ -40,7 +40,15 @@ Este proyecto es un proyecto base que contempla los siguientes elementos aplicad
 
 Este proyecto se divide en varios branchs para que se pueda visualizar cómo se puede aplicar Devise paso a paso sobre un proyecto que tiene una librería como Bootstrap aplicado. Los branch son:
 
-1. 01_devise_instalado : Proyecto rails con todos los [elementos aplicados](https://github.com/enaguero/devise_rails/tree/01_devise_instalado#elementos-aplicados).
+1. 01_devise_instalado : Proyecto rails con todos los [elementos aplicados](https://github.com/enaguero/devise_rails/tree/01_devise_instalado#elementos-aplicados). Solo contempla la incorporación de la gema Devise, la instalación de Devise y agregar devise al modelo User. Los comandos asociados son:
+
+```
+$ rails generate devise:install
+$ rails generate devise MODEL
+```
+
+Para más detalle, ver la [documentación oficial de Devise](https://github.com/plataformatec/devise#getting-started).
+
 
 
 # Fuentes
