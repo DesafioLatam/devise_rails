@@ -18,11 +18,11 @@ rails generate layout:install bootstrap3
 
 # Estado del proyecto
 
-Este proyecto es un proyecto base que contempla los siguientes elementos aplicado y funcionalidades:
+Este proyecto es un proyecto base que contempla los siguientes elementos aplicados y funcionalidades:
 
 ## Elementos Aplicados
 
-1. Se instaló Bootstrap versión 3.3.7 para poder integrarlo utilizando Sass. Sin embargo, para hacer su uso más simple se eliminó el archivo creado ** 1st_load_framework.css.scss** por la gema Rails Layout indicado en la sección **The “layout:install” Command** y se utilizó el archivo **app/assets/stylesheets/application.scss** para importar bootstrap.
+1. Se instaló Bootstrap versión 3.3.7 para poder integrarlo utilizando Sass. Sin embargo, para hacer su uso más simple se eliminó el archivo creado **1st_load_framework.css.scss** por la gema Rails Layout indicado en la sección **The “layout:install” Command** y se utilizó el archivo **app/assets/stylesheets/application.scss** para importar bootstrap.
 
 2. Existe una barra superior responsiva con las secciones HOME y Users.
 
