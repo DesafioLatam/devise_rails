@@ -26,7 +26,7 @@ Este proyecto es un proyecto base que contempla los siguientes elementos aplicad
 
 2. Existe una barra superior responsiva con las secciones HOME y Users.
 
-3. Existe la sección de perfil del usuario para hacer sign up (registrarse), sign in (iniciar sesión) y registrarse (sign up).
+3. Existe la sección de perfil del usuario para hacer sign up (registrarse), sign in (iniciar sesión) y sign out (cerrar sesión).
 
 
 ## Funcionalidades
