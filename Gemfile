@@ -64,3 +64,5 @@ gem 'jquery-rails'
 
 #Font Awesome
 gem 'font-awesome-sass'
+
+gem 'devise'
