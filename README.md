@@ -48,8 +48,9 @@ $ rails g scaffold User name:string last_name:string phone:string address:string
 $ rails generate devise User
 ```
 
-Para más detalle, ver la [documentación oficial de Devise](https://github.com/plataformatec/devise#getting-started).
+En este branch se puede acceder a todas las secciones, se puede tratar de registrar usuarios solo con email y password, se pueden visualizar en la lista general, sin embargo, no se verán campos.  
 
+Para más detalle, ver la [documentación oficial de Devise](https://github.com/plataformatec/devise#getting-started).
 
 # Fuentes
 
