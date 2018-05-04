@@ -16,9 +16,34 @@ rails generate layout:install bootstrap3
 
 * [Font Awesome](https://github.com/FortAwesome/font-awesome-sass) para íconos awesome :).
 
+# Estado del proyecto
+
+Este proyecto es un proyecto base que contempla los siguientes elementos aplicado y funcionalidades:
+
+## Elementos Aplicados
+
+1. Se instaló Bootstrap versión 3.3.7 para poder integrarlo utilizando Sass. Sin embargo, para hacer su uso más simple se eliminó el archivo creado ** 1st_load_framework.css.scss ** por la gema Rails Layout indicado en la sección **The “layout:install” Command** y se utilizó el archivo **app/assets/stylesheets/application.scss** para importar bootstrap.
+
+2. Existe una barra superior responsiva con las secciones HOME y Users.
+
+3. Existe la sección de perfil del usuario para hacer sign up (registrarse), sign in (iniciar sesión) y registrarse (sign up).
+
+
+## Funcionalidades
+
+1. Página inicial de bienvenida donde solo los usuarios visitantes (no registrados ni logeados) pueden visitar
+
+2. Se creará un sistema básico para crear usuarios a través de [Scaffold](http://guides.rubyonrails.org/v3.2.9/getting_started.html#getting-up-and-running-quickly-with-scaffolding) de Rails. Esto quiere decir que se puede hacer el [CRUD](https://es.wikipedia.org/wiki/CRUD) de usuarios en la aplicación. Sólo los usuarios logeados pueden acceder a esta funcionalidad.
+
+
 # La gema Devise
+
+Este proyecto se divide en varios branchs para que se pueda visualizar cómo se puede aplicar Devise paso a paso sobre un proyecto que tiene una librería como Bootstrap aplicado. Los branch son:
+
+1. 01_devise_instalado : Proyecto rails con todos los [elementos aplicados](#Elementos Aplicados).
 
 
 # Fuentes
 
-1. Ícono de usuario para foto de perfil : http://jsfiddle.net/bJcrk/2/
+1. [Ícono de usuario para foto de perfil](http://jsfiddle.net/bJcrk/2/)
+2. [Iniciar con Devise - Documentación Oficial](https://github.com/plataformatec/devise#getting-started)
