@@ -1,0 +1,23 @@
+<ul class="nav navbar-nav navbar-right">
+  <li>
+    <a href="#"><i class="fa fa-suitcase"></i> Projects</a>
+  </li>
+  <li class="dropdown">
+    
+    <%if user_signed_in? %>
+      <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown">
+      <img src="http://placehold.it/30x30" class="img-circle special-img"><b class="caret"></b></a>
+
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+        <li class="divider"></li>
+        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign-out</a></li>
+      </ul>
+    <%else%>
+      <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown"> <i class="fas fa-sign-in-alt"></i> Iniciar Sesión <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="fas fa-user-plus"></i> Registrarse</a></li>
+      </ul>
+    <%end%>
+  </li>
+</ul>
