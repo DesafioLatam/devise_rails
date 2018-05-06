@@ -48,11 +48,35 @@ $ rails g scaffold User name:string last_name:string phone:string address:string
 $ rails generate devise User
 ```
 
-En este branch se puede acceder a todas las secciones, se puede tratar de registrar usuarios solo con email y password, se pueden visualizar en la lista general, sin embargo, no se verán campos.  
+En este branch se puede acceder a todas las secciones, se puede tratar de registrar usuarios solo con email y password, se pueden visualizar en la lista general, sin embargo, no se verán campos debido a que no se configurado los campos adicionales para ser parte del proceso de registro de Devise. Es posible hacerlo desde el inicio, sin embargo, es una decisión de diseño en qué momento crearlos junto al usuario y sus sesiones.  
 
-Para más detalle, ver la [documentación oficial de Devise](https://github.com/plataformatec/devise#getting-started).
+Por último, para saber las rutas disponibles que nos entrega Devise es posible hacerlo a través de la consola con el comando:
+
+```
+$ rake routes
+```
+
+Las rutas de devise vienen dadas por el código **devise_for :users** en el archivo routes `<name_app>/config/routes.rb` y las rutas agregadas vienen por los siguientes [módulos agregados](https://www.rubydoc.info/github/plataformatec/devise/) en el modelo User:
+
+1. :database_authenticatable
+2. :registerable
+3. :recoverable
+4. :rememberable
+5. :trackable
+6. :validatable 
+
+Para más detalle de como iniciar con Devise, ver la [documentación oficial de Devise](https://github.com/plataformatec/devise#getting-started).
 
 ## Branch 02: 02_manejo_de_sesiones
+
+La gema Devise ha estado en el mundo Rails desde el 2009 y se ha convertido en ya casi un estándar al momento de realizar todo el proceso de registro y manejo de sesiones en Rails. Sin embargo, es siempre bueno saber cómo una implementación hecha la podemos utilizar a nuestro favor sabiendo que élementos posicionar.
+
+El objetivo de esta segunda parte es poder realizar lo siguiente:
+
+1. Al momento de visitar la página inicial el sistema identifique si el usuario está ha iniciado sesión, si no ha iniciado sesión mostrar la barra con los botones Home, Iniciar Sesión y Registrar (pero registrar como sub menú).
+
+2. Controlar el acceso de los usuarios permitiendo que sólo los usuarios registrados puedan visitar el panel de usuarios creados vía Scaffold.
+
 
 
 # Fuentes
