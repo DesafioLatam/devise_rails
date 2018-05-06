@@ -52,6 +52,9 @@ En este branch se puede acceder a todas las secciones, se puede tratar de regist
 
 Para más detalle, ver la [documentación oficial de Devise](https://github.com/plataformatec/devise#getting-started).
 
+## Branch 02: 02_manejo_de_sesiones
+
+
 # Fuentes
 
 1. [Ícono de usuario para foto de perfil](http://jsfiddle.net/bJcrk/2/).
