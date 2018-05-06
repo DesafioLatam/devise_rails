@@ -78,7 +78,6 @@ El objetivo de esta segunda parte es poder realizar lo siguiente:
 2. Controlar el acceso de los usuarios permitiendo que sólo los usuarios registrados puedan visitar el panel de usuarios creados vía Scaffold.
 
 
-
 # Fuentes
 
 1. [Ícono de usuario para foto de perfil](http://jsfiddle.net/bJcrk/2/).
