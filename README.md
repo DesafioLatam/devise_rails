@@ -77,7 +77,13 @@ El objetivo de esta segunda parte es poder realizar lo siguiente:
 
 2. Controlar el acceso de los usuarios permitiendo que sólo los usuarios registrados puedan visitar el panel de usuarios creados vía Scaffold.
 
+## Branch 03: 03_agregar_nuevos_campos
 
+El objetivo de este branch es poder agregar nuevos campos a los que Devise trae por defecto (email, password, password_confirmation) tales como nombre (name), apellido (last_name) y dirección (address) al momento de registrar (crear) un usuario en la plataforma. Esto se realiza a través de los siguientes pasos:
+
+1. Incorporar nuevos parámetros en el formulario de creación/registro (sign up) de un usuario.
+2. Incorporar los nuevos parámetro para que sean procesados por los [**strong params**](http://api.rubyonrails.org/v5.0/classes/ActionController/StrongParameters.html) de rails.
+3. El formulario de registro se posiciona en la página de inicio
 
 # Fuentes
 
