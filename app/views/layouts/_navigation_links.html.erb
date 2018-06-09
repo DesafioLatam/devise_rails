@@ -1,5 +1,9 @@
 <%# add navigation links to this file %>
 <%= link_to 'Usuarios', users_path, class: 'navbar-brand' %>
+
 <% if current_user.present? %>
-  <a href="#" class="navbar-brand" ><i class="fa fa-suitcase"></i> Proyectos</a>
+  <a href="#" class="navbar-brand" >
+    <i class="fa fa-suitcase"></i>
+    Proyectos
+  </a>
 <% end %>
