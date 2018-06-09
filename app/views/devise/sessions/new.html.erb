@@ -12,7 +12,7 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
     </div>
-      <%= f.submit 'Registrarse', class: 'btn btn-default' %>
+      <%= f.submit 'Iniciar Sesión', class: 'btn btn-default' %>
 
       <% if devise_mapping.rememberable? -%>
         <div class="checkbox" style="width:150px">
@@ -24,7 +24,7 @@
 
       <div>
         <%- if devise_mapping.registerable? %>
-          <%= link_to 'Iniciar Sesión', new_registration_path(resource_name), class: 'right'  %>
+          <%= link_to 'Registrarse', new_registration_path(resource_name), class: 'right'  %>
         <% end -%>
       |
         <%- if devise_mapping.recoverable? %>
