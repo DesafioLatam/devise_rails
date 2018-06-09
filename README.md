@@ -38,7 +38,7 @@ Este proyecto es un proyecto base que contempla los siguientes elementos aplicad
 
 Este proyecto se divide en varios branchs para que se pueda visualizar cómo se puede aplicar Devise paso a paso sobre un proyecto que tiene una librería como Bootstrap aplicado. Los branch son:
 
-## Branch 01: 01_devise_instalado 
+## Branch 01: 01_devise_instalado
 
 Proyecto rails con todos los [elementos aplicados](https://github.com/enaguero/devise_rails/tree/01_devise_instalado#elementos-aplicados). Solo contempla la incorporación de la gema Devise, la instalación de Devise, agregar devise al modelo User y la generación de Scaffold del modelo User. Los comandos asociados son:
 
@@ -63,7 +63,7 @@ Las rutas de devise vienen dadas por el código **devise_for :users** en el arch
 3. :recoverable
 4. :rememberable
 5. :trackable
-6. :validatable 
+6. :validatable
 
 Para más detalle de como iniciar con Devise, ver la [documentación oficial de Devise](https://github.com/plataformatec/devise#getting-started).
 
@@ -78,12 +78,6 @@ El objetivo de esta segunda parte es poder realizar lo siguiente:
 2. Controlar el acceso de los usuarios permitiendo que sólo los usuarios registrados puedan visitar el panel de usuarios creados vía Scaffold.
 
 ## Branch 03: 03_agregar_nuevos_campos
-
-El objetivo de este branch es poder agregar nuevos campos a los que Devise trae por defecto (email, password, password_confirmation) tales como nombre (name), apellido (last_name) y dirección (address) al momento de registrar (crear) un usuario en la plataforma. Esto se realiza a través de los siguientes pasos:
-
-1. Incorporar nuevos parámetros en el formulario de creación/registro (sign up) de un usuario.
-2. Incorporar los nuevos parámetro para que sean procesados por los [**strong params**](http://api.rubyonrails.org/v5.0/classes/ActionController/StrongParameters.html) de rails.
-3. El formulario de registro se posiciona en la página de inicio
 
 # Fuentes
 
