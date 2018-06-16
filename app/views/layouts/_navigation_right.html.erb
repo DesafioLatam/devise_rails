@@ -3,10 +3,17 @@
     <li class="dropdown">
 
         <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown">
-        <img src="http://placehold.it/30x30" class="img-circle special-img"><b class="caret"></b></a>
-
+        <%if current_user.avatar_url(:thumb).to_s.present? %>
+          <%= image_tag(current_user.avatar_url(:thumb).to_s, class:"img-circle special-img") %>
+        <%else%>
+          <img src="http://placehold.it/30x30" class="img-circle special-img"><b class="caret"></b></a>
+        <%end%>
         <ul class="dropdown-menu">
-          <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+          <li>
+            <%= link_to user_path(current_user) do %>
+              <i class="fas fa-user"></i> Perfil
+            <% end %>
+          </li>
           <li class="divider"></li>
           <li>
             <%= link_to destroy_user_session_path , method: :delete do %>

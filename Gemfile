@@ -68,3 +68,6 @@ gem 'font-awesome-sass'
 gem 'devise'
 
 gem 'awesome_print'
+
+gem 'carrierwave'
+gem 'mini_magick'
