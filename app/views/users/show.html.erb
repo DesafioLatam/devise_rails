@@ -20,5 +20,10 @@
   <%= @user.address %>
 </p>
 
+<p>
+  <strong>Avatar:</strong>
+  <%= image_tag(@user.avatar_url.to_s) %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

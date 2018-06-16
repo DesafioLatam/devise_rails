@@ -68,4 +68,11 @@ gem 'font-awesome-sass'
 
 gem 'devise'
 
+
 gem "pg"
+
+gem 'awesome_print'
+
+gem 'carrierwave'
+gem 'rmagick'
+
