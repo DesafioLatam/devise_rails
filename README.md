@@ -79,6 +79,7 @@ El objetivo de esta segunda parte es poder realizar lo siguiente:
 
 ## Branch 03: 03_agregar_nuevos_campos
 
+
 # Fuentes
 
 1. [Ícono de usuario para foto de perfil](http://jsfiddle.net/bJcrk/2/).
